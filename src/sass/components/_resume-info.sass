@@ -14,10 +14,13 @@
       bottom: 120px
       width: 120px
   .img
-    width: 145px
+    
     border-radius: 50%
     overflow: hidden
     margin: 8px auto $vertical-gutter
+
+    @include breakpoint(small down)
+      width: 150px
     img
       display: block
       width: 100%
