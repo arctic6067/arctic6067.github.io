@@ -46,28 +46,28 @@
 
 // 0. FontFaces
 
-$font-family-main: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$font-family-main: Roboto, sans-serif;
 
 // 1. Global
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(660);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #0093d7,
   secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
+  success: #a3cd3b,
+  warning: #ffc815,
   alert: #cc4b37,
 );
-$light-gray: #e6e6e6;
+$light-gray: #f0f0f0;
 $medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$dark-gray: #666;
+$black: #010101;
 $white: #fefefe;
-$body-background: $white;
-$body-font-color: $black;
+$body-background: $light-gray;
+$body-font-color: $dark-gray;
 $body-font-family: $font-family-main;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -98,10 +98,10 @@ $breakpoint-classes: (small medium large);
 // -----------
 
 $grid-row-width: $global-width;
-$grid-column-count: 12;
+$grid-column-count: 8;
 $grid-column-gutter: (
   small: 20px,
-  medium: 30px,
+  medium: 20px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -113,7 +113,7 @@ $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: inherit;
+$header-color: $black;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
@@ -151,8 +151,8 @@ $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
-$hr-border: 1px solid $medium-gray;
-$hr-margin: rem-calc(20) auto;
+$hr-border: 2px solid $light-gray;
+$hr-margin: 0 auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
 $list-style-type: disc;
@@ -368,9 +368,9 @@ $input-prefix-color: $black;
 $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $medium-gray;
 $input-prefix-padding: 1rem;
-$form-label-color: $black;
-$form-label-font-size: rem-calc(14);
-$form-label-font-weight: $global-weight-normal;
+$form-label-color: $body-font-color;
+$form-label-font-size: rem-calc(12);
+$form-label-font-weight: 500;
 $form-label-line-height: 1.8;
 $select-background: $white;
 $select-triangle-color: $dark-gray;

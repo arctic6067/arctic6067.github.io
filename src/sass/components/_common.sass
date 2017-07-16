@@ -1,0 +1,27 @@
+input
+  &[type=checkbox]
+    display: none
+    &:checked + label:before
+      background: $primary-color url(/images/check.svg) center no-repeat
+    & + label
+      text-transform: uppercase
+
+      display: inline-block
+      margin-bottom: $vertical-gutter
+      margin-left: 0
+      padding-right: 8px
+      &:before
+        content: ""
+
+        display: inline-block
+        width: 19px
+        height: 19px
+        border-radius: 5px
+        margin-right: 8px
+
+        position: relative
+        top: 4px
+
+        text-align: center
+
+        background: darken($light-gray, 1)
