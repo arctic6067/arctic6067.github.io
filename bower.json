@@ -1,0 +1,17 @@
+{
+  "name": "foundation-project-template",
+  "version": "1.0.2",
+  "authors": [
+    "Amir Gafurov <gafurovamir@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "foundation-sites": "6.3.0",
+    "promise-polyfill": "^6.0.2"
+  }
+}
