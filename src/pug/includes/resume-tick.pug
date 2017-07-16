@@ -1,0 +1,19 @@
+- var labels = ['html5','css3','бэм','sass','less','gulp', 'vanillajs', 'angular', 'jquery', 'git', 'foundation', 'bootstrap' ]
+- var labelsColumn = []
+
+- for (var i = 0; i < Math.ceil(labels.length / 3); i++) {
+-  labelsColumn.push(labels.slice(3 * i, 3 * (i + 1)));
+-}
+
+
+.resume-tick
+  .row
+    .column: .title Навыки
+    
+    each labels in labelsColumn
+      .column.small-2
+        each label, index in labels
+          div
+            input(type='checkbox' id=label)
+            label(for=label)= label 
+hr
