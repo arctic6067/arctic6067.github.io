@@ -1,0 +1,21 @@
+
+.resume
+  max-width: $global-width
+  margin: 0 auto
+  margin-top: $vertical-gutter
+
+  background: $light-gray url(/images/resume-bg.jpg) repeat
+
+  text-transform: uppercase
+
+  @include breakpoint(small down)
+    margin-top: 0
+  .row
+    padding: 0  $row-gutter
+  .title
+    font-size: rem-calc(18)
+    text-transform: none
+
+    color: $header-color
+
+    margin-bottom: $global-margin

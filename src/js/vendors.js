@@ -1,3 +1,6 @@
+//JQuery
+//= ../../bower_components/jquery/dist/jquery.min.js
+
 // Foundation Core files
 // ../../bower_components/foundation-sites/dist/js/plugins/foundation.core.js
 
@@ -36,3 +39,4 @@
 
 // Other vendor
 //= ../../bower_components/promise-polyfill/promise.min.js
+//= ../../bower_components/jquery-knob/dist/jquery.knob.min.js

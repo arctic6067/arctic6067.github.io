@@ -1,0 +1,30 @@
+.resume-skill
+  padding-top: $vertical-gutter*3
+  padding-bottom: $vertical-gutter*3
+
+  @include breakpoint(small down)
+    text-align: center
+  .meter
+    position: relative
+
+    display: inline-block
+    width: 253px
+    height: 134px
+    margin-top: -8px
+
+    background: url(/images/meter.png) center top no-repeat
+
+    @include breakpoint(small down)
+      margin-bottom: $vertical-gutter
+    .meter-arrow
+      position: absolute
+      bottom: -2px
+      left: 50%
+      margin-left: -53px
+
+      transform-origin: 54px center
+      pointer-events: none
+  .counter
+    font-size: 50px
+    font-weight: 900
+    color: $primary-color
